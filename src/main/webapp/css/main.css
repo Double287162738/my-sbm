@@ -1,6 +1,3 @@
-body{
-	text-align: center;
-}
 * {
     margin: 0px;
     padding: 0px;
@@ -23,9 +20,9 @@ body{
 	text-align: center;
 	background: url(../img/pageBackGround.jpg);
 	height: 450px;
-	background-color: rgb(9, 24, 39); 
-	padding-top: 70px; 
-	padding-bottom: 100px; 
+	background-color: rgb(9, 24, 39);
+	padding-top: 70px;
+	padding-bottom: 100px;
 	background-position: 50% -202px;
 }
 #p1Tittle{
@@ -44,7 +41,7 @@ body{
 	margin: 20px auto;
 }
 #Carousel{
-	margin: -15px auto;	
+	margin: -15px auto;
 	text-align: center;
 	width: 100%;
 	height: 250px;
@@ -92,19 +89,19 @@ dt{
 
 
 
-.carousel-control.left {  
-  background-image:none;  
-  background-repeat: repeat-x;  
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);  
-}  
-.carousel-control.right {  
-  left: auto;  
-  right: 0;  
-   
-  background-image:none;  
-  background-repeat: repeat-x;  
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);  
-}  
+.carousel-control.left {
+  background-image:none;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.carousel-control.right {
+  left: auto;
+  right: 0;
+
+  background-image:none;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
 .glyphicon-chevron-left,.glyphicon-chevron-right{
 	font-size: 20px !important;
 }
@@ -113,9 +110,9 @@ dt{
 .btn.active:focus,
 .btn.focus,
 .btn:active.focus,
-.btn.active.focus {   
-	 outline: none;    
-	 border-color: transparent;    
+.btn.active.focus {
+	 outline: none;
+	 border-color: transparent;
 	 box-shadow:none;
 }
 .item{
@@ -132,7 +129,8 @@ dt{
 }
 /*首页导航部分*/
 #daohang{
-	width: 90%;
+	position: relative;
+	width:1200px;
 	height: 350px;
 	border: 2px solid #D3D3D3;
 	border-radius: 5px;
@@ -144,13 +142,13 @@ dt{
 #daohang1{
 	display: inline-block;
 	background: #2b333b;
-	width: 16%;
+	width: 200px;
 	height: 100%;
 	border: 1px solid #D3D3D3;
 	border-radius: 5px 0 0 5px;
 }
 
-#daohang1  a{
+#daohang1  ul >a{
 	color: rgba(255,255,255,.6);
 	text-decoration: none;
 }
@@ -159,7 +157,6 @@ dt{
 	height:90% ;
 	margin: auto;
 	font-size: 18px;
-	list-style:none;
 	margin-top: 17px;
 }
 #daohang1 li{
@@ -185,6 +182,97 @@ dt{
 #daohang2{
 	display: inline-block;
 	float: right;
-	width: 84%;
+	width: 996px;
 	height: 100%;
+}
+.daohang1Hover{
+	position: absolute;
+	z-index:999;
+	left:200px;
+	width:700px;
+	height:346px;
+	background: #fff;
+	top:0px;
+	display: none;
+}
+
+#daohang1 ul a li:hover .daohang1Hover{
+	display: block;
+}
+.daohang1HoverTop{
+	height:60%;
+	padding:0px 20px 0px 20px;
+}
+.daohang1HoverBottom{
+	height:40%;
+	background: #F8FAFC;
+}
+.daohang1HoverP{
+	color: #696969;
+	font-size:15px;
+	font-weight:800;
+	padding:0px;
+	margin:0px;
+}
+.page-header{
+	padding:0px;
+	margin:0px;
+	margin-top:-20px;
+}
+
+.daohang1HoverBtn{
+	color:#03a6ff;
+	border: 1px solid #03a6ff;
+	background: white;
+	margin-right:10px;
+}
+.daohang1HoverRec{
+	position: relative;
+	margin-left:20px;
+	margin-right:10px;
+	margin-top:3px;
+	display: inline-block;
+	width:310px;
+	height:130px;
+}
+
+.recPic{
+	position:relative;
+	width:35%;
+	display: inline-block;
+	height:130px;
+}
+.recPic img{
+	position:absolute;
+	margin:auto;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	text-align: center;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.recDetail{
+	position: absolute;
+	display: inline-block;
+	width:60%;
+	height:130px;
+}
+.recName>h5{
+	width:100%;
+	font-size:18px;
+	color: #696969;
+	font-weight:600;
+}
+.recCommon>h5{
+	width:100%;
+	font-size:10px;
+	color: #808080;
+	font-weight:400;
+}
+
+.F8FAFCBackground{
+	background: #F8FAFC;
 }

@@ -349,7 +349,7 @@ a.active.focus {
 	 cursor: pointer;
 }
 
-#fuzhi-pic:focus,,#connectQQ-pic:focus{
+#fuzhi-pic:focus,#connectQQ-pic:focus{
 	cursor: pointer;
 	transform: scale(0.5);  
 }
